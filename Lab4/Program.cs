@@ -12,9 +12,11 @@ namespace Lab4
         {
             Console.WriteLine("Введите целое число");
             int n = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
             for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("Квадрат числа {0} равен {1}", i, (2 * i - 1));
+                sum += (2*i-1);
+                Console.WriteLine(sum);
             }
             Console.ReadKey();
         }
